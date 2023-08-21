@@ -1,15 +1,15 @@
 const http = globalThis.require("http");
 export default class JSRunner {
-    private server;
+    private server:any;
     private port: number;
     constructor(port = 49465) {
         this.port = port;
     }
     public start(): void {
         if (!this.server) {
-            this.server = http.createServer(async (req, res) => {
+            this.server = http.createServer(async (req: any, res:any) => {
                 if (req.method == "POST") {
-                    const body = await this.getBody(req);
+                    const body: string = await this.getBody(req) as string;
                     const result = eval(body);
                     res.end(JSON.stringify(result));
 
@@ -35,12 +35,12 @@ export default class JSRunner {
             console.log(`已关闭服务,端口${this.port}`);
         }
     }
-    private getBody(request) {
+    private getBody(request:any) {
         return new Promise(
             (resolve) => {
-                const bodyParts = [];
+                const bodyParts: Buffer[] = [];
                 let body;
-                request.on("data", (chunk) => {
+                request.on("data", (chunk:Buffer) => {
                     bodyParts.push(chunk);
                 }).on("end", () => {
                     body = Buffer.concat(bodyParts).toString();
