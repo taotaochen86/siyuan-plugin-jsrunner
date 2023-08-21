@@ -1,0 +1,35 @@
+{
+  "name": "siyuan-plugin-jsrunner",
+  "author": "ttChen",
+  "url": "https://github.com/siyuan-note/plugin-sample",
+  "version": "0.1.12",
+  "minAppVersion": "2.9.0",
+  "backends": [
+    "windows",
+    "linux",
+    "darwin"
+  ],
+  "frontends": [
+    "desktop"
+  ],
+  "displayName": {
+    "default": "siyuan-plugin-jsrunner",
+    "zh_CN": "运行JS脚本"
+  },
+  "description": {
+    "default": "Run jscode from post request and return the result to the client-side",
+    "zh_CN": "创建HTTP服务器，运行外部Javascript片段，并返回结果！"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "funding": {
+    "openCollective": "",
+    "patreon": "",
+    "github": "",
+    "custom": [
+      "https://ld246.com/sponsor"
+    ]
+  }
+}
