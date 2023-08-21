@@ -20,10 +20,15 @@
 
 ### c#获取siyuan笔记当前文档 block_id
 ``` c#
+     string url = "http://localhost:49465";
     string jsCode = """
     document.querySelector("div:not(.fn__none).fn__flex-1.protyle .protyle-breadcrumb__item--active").attributes['data-node-id'].value
     """;
-    return JSRunner.JsCodeForSiyuan(jsCode).ToString();
+    var body = new StringContent(data, Encoding.UTF8, "application/json");
+    using HttpClient client = new HttpClient();
+    HttpResponseMessage response = await client.PostAsync(url, body).ConfigureAwait(false);
+    response.EnsureSuccessStatusCode();
+    string responseBody = await response.Content.ReadAsStringAsync();
 ```
 
 
