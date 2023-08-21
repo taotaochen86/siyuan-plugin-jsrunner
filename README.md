@@ -1,10 +1,12 @@
 # 运行JS脚本
 
-创建HTTP服务器，运行外部Javascript片段，并返回结果！
+创建HTTP服务器，运行客户端发送过来的外部Javascript片段，并向其返回结果！
 
 ## 代码示例：
 
 下面以C#为例，获取当前块的block_id和当前文档的block_id
+
+
 ### c#获取siyuan笔记当block_id
 ```c#
     string url = "http://localhost:49465";
@@ -39,4 +41,4 @@ Run jscode from post request and return the result to the client-side
 
 ## Parameters:
 url: http://localhost:49465/
-JScode
+Http methods: Post
