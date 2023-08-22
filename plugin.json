@@ -16,11 +16,10 @@
   },
   "description": {
     "default": "Run jscode from post request and return the result to the client-side",
-    "zh_CN": "创建HTTP服务器，运行外部Javascript片段，并返回结果！"
+    "zh_CN": "创建HTTP服务器，运行客户端发送过来的外部Javascript片段，并向其返回结果！"
   },
   "readme": {
-    "default": "README.md",
-    "zh_CN": "README_zh_CN.md"
+    "default": "README.md"    
   },
   "funding": {
     "openCollective": "",

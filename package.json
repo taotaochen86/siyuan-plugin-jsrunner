@@ -1,6 +1,6 @@
 {
   "name": "siyuan-plugin-jsrunner",
-  "version": "1.0",
+  "version": "1.2.12",
   "description": "Run jscode from post request and return the result to the client-side",
   "main": ".src/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "build": "webpack --mode production"
   },
   "keywords": [],
-  "author": "Vanessa",
+  "author": "Taotao Chen",
   "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.29.0",
