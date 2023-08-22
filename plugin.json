@@ -1,7 +1,7 @@
 {
   "name": "siyuan-plugin-jsrunner",
   "author": "ttChen",
-  "url": "https://github.com/siyuan-note/plugin-sample",
+  "url": "https://github.com/taotaochen86/siyuan-plugin-jsrunner",
   "version": "1.2.12",
   "minAppVersion": "2.9.3",
   "backends": [
@@ -19,7 +19,8 @@
     "zh_CN": "创建HTTP服务器，运行客户端发送过来的外部Javascript片段，并向其返回结果！"
   },
   "readme": {
-    "default": "README.md"    
+    "default": "README.md",
+    "zh_CN":  "README_zh_CN.md"
   },
   "funding": {
     "openCollective": "",

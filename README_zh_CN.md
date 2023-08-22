@@ -1,13 +1,14 @@
-# ÔËĞĞJS½Å±¾
+# è¿è¡ŒJSè„šæœ¬
 
-´´½¨HTTP·şÎñÆ÷£¬ÔËĞĞ¿Í»§¶Ë·¢ËÍ¹ıÀ´µÄÍâ²¿JavascriptÆ¬¶Î£¬²¢ÏòÆä·µ»Ø½á¹û£¡
+åˆ›å»ºHTTPæœåŠ¡å™¨ï¼Œè¿è¡Œå®¢æˆ·ç«¯å‘é€è¿‡æ¥çš„å¤–éƒ¨Javascriptç‰‡æ®µï¼Œå¹¶å‘å…¶è¿”å›ç»“æœï¼
 
-## ´úÂëÊ¾Àı£º
+## ä»£ç ç¤ºä¾‹ï¼š
 
-ÏÂÃæÒÔC#ÎªÀı£¬»ñÈ¡µ±Ç°¿éµÄblock_idºÍµ±Ç°ÎÄµµµÄblock_id
+ä¸‹é¢ä»¥C#ä¸ºä¾‹ï¼Œè·å–å½“å‰å—çš„block_idå’Œå½“å‰æ–‡æ¡£çš„block_id
 
 
-### c#»ñÈ¡siyuan±Ê¼Çµ±block_id
+### c#è·å–siyuanç¬”è®°å½“block_id
+
 ```c#
     string url = "http://localhost:49465";
     string data = """
@@ -20,7 +21,8 @@
     string responseBody = await response.Content.ReadAsStringAsync();
 ```
 
-### c#»ñÈ¡siyuan±Ê¼Çµ±Ç°ÎÄµµ block_id
+### c#è·å–siyuanç¬”è®°å½“å‰æ–‡æ¡£ block_id
+
 ``` c#
      string url = "http://localhost:49465";
     string jsCode = """
