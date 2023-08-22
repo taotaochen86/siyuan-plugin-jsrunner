@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  pnpm:
+    specifier: ^8.6.12
+    version: 8.6.12
+
 devDependencies:
   '@typescript-eslint/eslint-plugin':
     specifier: 5.29.0
@@ -1733,6 +1738,12 @@ packages:
     dependencies:
       find-up: 4.1.0
     dev: true
+
+  /pnpm@8.6.12:
+    resolution: {integrity: sha512-Eza4C5SO/Xl5IYozupbZ5NOA5leBRPYxmXmXfe7G4/4uCkRLhks84rB33aitxNZU/uMrnDGGjwrLktoKvPjqHA==}
+    engines: {node: '>=16.14'}
+    hasBin: true
+    dev: false
 
   /postcss-modules-extract-imports@3.0.0(postcss@8.4.23):
     resolution: {integrity: sha512-bdHleFnP3kZ4NYDhuGlVK+CMrQ/pqUm8bx/oGL93K6gVwiclvX5x0n76fYMKuIGKzlABOy13zsvqjb0f92TEXw==}
