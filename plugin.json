@@ -2,7 +2,7 @@
   "name": "siyuan-plugin-jsrunner",
   "author": "ttChen",
   "url": "https://github.com/siyuan-note/plugin-sample",
-  "version": "0.2.12",
+  "version": "1.2.12",
   "minAppVersion": "2.9.3",
   "backends": [
     "windows"
