@@ -38,7 +38,6 @@
 ```
 
 
-### C#获取siyuan笔记当前块
 
 
 # siyuan-plugin-jsrunner
