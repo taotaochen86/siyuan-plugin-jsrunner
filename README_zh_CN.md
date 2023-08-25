@@ -37,6 +37,10 @@
     string doc_id= RunAsync(jsCode).Result;
 ```
 
+### 通过Quicker 获取siyuan笔记当前block_id
+
+https://getquicker.net/Sharedaction?code=83e09d58-db88-4f8e-7b24-08dba207b0f4
+
 
 
 
