@@ -21,9 +21,9 @@ export default class SiyuanPluginJSRunner extends Plugin {
         const ele = event.target as HTMLElement;
         if (ele.hasAttribute("data-href") && ele.getAttribute("data-href").startsWith("quicker:runaction:")) {
             
-            global.CurrentELEMENT = ele;
+            globalThis.CurrentELEMENT = ele;
         } else {
-            global.CurrentELEMENT = null;
+            globalThis.CurrentELEMENT = null;
         }
     }
     onLayoutReady() {
