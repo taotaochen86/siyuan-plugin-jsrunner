@@ -19,11 +19,16 @@ export default class SiyuanPluginJSRunner extends Plugin {
     }
     private middleButtonClick(event: MouseEvent) {
         const ele = event.target as HTMLElement;
-        if (ele.hasAttribute("data-href") && ele.getAttribute("data-href").startsWith("quicker:runaction:")) {
-            
+        if (ele.hasAttribute("data-href") && ele.getAttribute("data-href").startsWith("quicker:runaction:")) {            
             globalThis.CurrentELEMENT = ele;
         } else {
-            globalThis.CurrentELEMENT = null;
+            const temp = document.evaluate("./ancestor::span[contains(@data-href,'quicker:runaction')]", ele, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue as HTMLElement;
+            //console.log(temp);
+            if (temp) {
+                globalThis.CurrentELEMENT = temp;
+            } else {
+                globalThis.CurrentELEMENT = null;
+            }         
         }
     }
     onLayoutReady() {
