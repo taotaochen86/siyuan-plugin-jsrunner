@@ -1,0 +1,52 @@
+/* JS Bridge —— 只作用于插件自己的界面元素，不污染思源主题 */
+
+.jsb-hint {
+    font-size: 12.5px;
+    color: var(--b3-theme-on-surface);
+    opacity: .75;
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+
+.jsb-hint code {
+    background: var(--b3-theme-surface-lighter);
+    border-radius: 3px;
+    padding: 1px 4px;
+    font-size: 12px;
+}
+
+.jsb-code {
+    width: 100%;
+    height: 260px;
+    resize: vertical;
+    font-family: "Cascadia Code", "Consolas", "SF Mono", Menlo, monospace;
+    font-size: 12.8px;
+    line-height: 1.65;
+    tab-size: 4;
+    white-space: pre;
+    overflow: auto;
+}
+
+.jsb-out {
+    margin: 0;
+    max-height: 220px;
+    overflow: auto;
+    background: var(--b3-theme-surface-lighter);
+    border-radius: 5px;
+    padding: 10px 12px;
+    font-family: "Cascadia Code", "Consolas", "SF Mono", Menlo, monospace;
+    font-size: 12.5px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.jsb-status {
+    font-size: 12.5px;
+    word-break: break-all;
+}
+
+.jsb-port,
+.jsb-timeout {
+    text-align: right;
+}

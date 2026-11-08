@@ -2,10 +2,12 @@
   "name": "siyuan-plugin-jsrunner",
   "author": "ttChen",
   "url": "https://github.com/taotaochen86/siyuan-plugin-jsrunner",
-  "version": "1.2.15",
-  "minAppVersion": "2.9.3",
+  "version": "1.3.0",
+  "minAppVersion": "3.1.0",
   "backends": [
-    "windows"
+    "windows",
+    "linux",
+    "darwin"
   ],
   "frontends": [
     "desktop"
@@ -15,8 +17,8 @@
     "zh_CN": "运行JS脚本"
   },
   "description": {
-    "default": "Run jscode from post request and return the result to the client-side",
-    "zh_CN": "创建HTTP服务器，运行客户端发送过来的外部Javascript片段，并向其返回结果！"
+    "default": "Run JavaScript from Quicker, WorkBuddy or any local tool inside SiYuan's renderer; 127.0.0.1:6866 serves cursor / DOM / mouse endpoints and returns JSON. Legacy 49465 TypeScript source is kept in src/.",
+    "zh_CN": "让 Quicker、WorkBuddy 等外部程序把 JavaScript 送进思源渲染进程执行；6866 端口提供光标、DOM、鼠标处端点并返回 JSON。旧 49465 版 TypeScript 源码保留在 src/。"
   },
   "readme": {
     "default": "README.md",

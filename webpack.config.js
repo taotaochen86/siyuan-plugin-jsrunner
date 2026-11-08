@@ -10,11 +10,12 @@ module.exports = (env, argv) => {
     const isPro = argv.mode === "production";
     const plugins = [
         new MiniCssExtractPlugin({
-            filename: isPro ? "dist/index.css" : "index.css",
+            filename: "dist/index.css",
         })
     ];
+    // 2026-11-08: dev 也输出到 dist/，绝不覆盖根目录已合入的 index.js
     let entry = {
-        "index": "./src/index.ts",
+        "dist/index": "./src/index.ts",
     };
     if (isPro) {
         entry = {
@@ -31,7 +32,7 @@ module.exports = (env, argv) => {
                 {from: "icon.png", to: "./dist/"},
                 {from: "README*.md", to: "./dist/"},
                 {from: "plugin.json", to: "./dist/"},
-                {from: "src/i18n/", to: "./dist/i18n/"},
+                {from: "i18n/", to: "./dist/i18n/"},
             ],
         }));
         plugins.push(new ZipPlugin({
@@ -43,11 +44,7 @@ module.exports = (env, argv) => {
             },
         }));
     } else {
-        plugins.push(new CopyPlugin({
-            patterns: [
-                {from: "src/i18n/", to: "./i18n/"},
-            ],
-        }));
+        // 根目录已有 i18n/（6866 版），dev 不再复制，也不写任何根目录文件
     }
     return {
         mode: argv.mode || "development",

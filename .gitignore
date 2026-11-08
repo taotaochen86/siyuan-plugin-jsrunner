@@ -4,6 +4,3 @@ node_modules
 .eslintcache
 dist
 package.zip
-index.css
-index.js
-i18n
